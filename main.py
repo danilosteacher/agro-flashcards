@@ -91,6 +91,86 @@ data = {
     }
 }
 
+"Aula 15: Past & Projects": {
+        "DAY 1: Monday Meeting": {
+            "Vocabulary": [
+                {"t": "work → worked", "p": "wɜːrkt", "tr": "trabalhar / trabalhou", "ex": "I worked in the field all day yesterday."},
+                {"t": "call → called", "p": "kɔːld", "tr": "ligar / ligou", "ex": "She called the supplier to check the order."},
+                {"t": "email → emailed", "p": "ˈeɪmeɪld", "tr": "enviar email / enviou email", "ex": "I emailed the logistics department."},
+                {"t": "finish → finished", "p": "ˈfɪnɪʃt", "tr": "terminar / terminou", "ex": "We finished the report before 5 PM."},
+                {"t": "prepare → prepared", "p": "prɪˈperd", "tr": "preparar / preparou", "ex": "They prepared the presentation for the board."},
+                {"t": "talk → talked", "p": "tɔːkt", "tr": "conversar / conversou", "ex": "We talked about the new budget."},
+                {"t": "report", "p": "rɪˈpɔːrt", "tr": "relatório", "ex": "The sales report is on your desk."},
+                {"t": "client", "p": "ˈklaɪənt", "tr": "cliente", "ex": "The client is waiting in the lobby."},
+                {"t": "meeting", "p": "ˈmiːtɪŋ", "tr": "reunião", "ex": "The meeting starts in ten minutes."},
+                {"t": "team", "p": "tiːm", "tr": "equipe", "ex": "Our team won the safety award."},
+                {"t": "manager", "p": "ˈmænɪdʒər", "tr": "gerente", "ex": "The manager approved the travel expenses."},
+                {"t": "project", "p": "ˈprɒdʒekt", "tr": "projeto", "ex": "The irrigation project is almost complete."}
+            ]
+        },
+        "DAY 2: Grammar & Logistics": {
+            "Vocabulary": [
+                {"t": "check → checked", "p": "tʃekt", "tr": "verificar / verificou", "ex": "I checked the inventory levels."},
+                {"t": "present → presented", "p": "prɪˈzentɪd", "tr": "apresentar / apresentou", "ex": "He presented the data at the seminar."},
+                {"t": "visit → visited", "p": "ˈvɪzɪtɪd", "tr": "visitar / visitou", "ex": "The agronomist visited the farm."},
+                {"t": "explain → explained", "p": "ɪkˈspleɪnd", "tr": "explicar / explicou", "ex": "The technician explained how the sensor works."},
+                {"t": "discuss → discussed", "p": "dɪˈskʌst", "tr": "discutir / discutiu", "ex": "We discussed the strategy for next year."},
+                {"t": "complete → completed", "p": "kəmˈpliːtɪd", "tr": "completar / completou", "ex": "They completed the training yesterday."},
+                {"t": "confirm → confirmed", "p": "kənˈfɜːrmd", "tr": "confirmar / confirmou", "ex": "She confirmed the flight to the summit."},
+                {"t": "schedule → scheduled", "p": "ˈskedʒuːld", "tr": "agendar / agendou", "ex": "I scheduled the meeting for Monday."},
+                {"t": "presentation", "p": "ˌpreznˈteɪʃn", "tr": "apresentação", "ex": "The presentation lasted one hour."},
+                {"t": "supplier", "p": "səˈplaɪər", "tr": "fornecedor", "ex": "Contact the supplier for more fertilizer."},
+                {"t": "deadline", "p": "ˈdedlaɪn", "tr": "prazo", "ex": "The deadline for the proposal is Friday."},
+                {"t": "contract", "p": "ˈkɒntrækt", "tr": "contrato", "ex": "Sign the contract and send it back."}
+            ]
+        },
+        "DAY 3: Time & Pronunciation": {
+            "Vocabulary": [
+                {"t": "yesterday", "p": "ˈjestərdeɪ", "tr": "ontem", "ex": "The prices dropped yesterday."},
+                {"t": "yesterday morning", "p": "ˈjestərdeɪ ˈmɔːrnɪŋ", "tr": "ontem de manhã", "ex": "I was in the lab yesterday morning."},
+                {"t": "last week", "p": "lɑːst wiːk", "tr": "semana passada", "ex": "We received the shipment last week."},
+                {"t": "two days ago", "p": "tuː deɪz əˈgoʊ", "tr": "dois dias atrás", "ex": "The shipment arrived two days ago."},
+                {"t": "a week ago", "p": "ə wiːk əˈɡoʊ", "tr": "uma semana atrás", "ex": "The audit finished a week ago."},
+                {"t": "last month", "p": "lɑːst mʌnθ", "tr": "mês passado", "ex": "Our sales hit a record last month."},
+                {"t": "this morning", "p": "ðɪs ˈmɔːrnɪŋ", "tr": "esta manhã", "ex": "The power went out this morning."},
+                {"t": "on Monday", "p": "ɒn ˈmʌndeɪ", "tr": "na segunda-feira", "ex": "I have a flight on Monday."},
+                {"t": "before lunch", "p": "bɪˈfɔːr lʌntʃ", "tr": "antes do almoço", "ex": "Can we talk before lunch?"},
+                {"t": "on time", "p": "ɒn taɪm", "tr": "no horário", "ex": "The bus arrived exactly on time."}
+            ]
+        },
+        "DAY 4: Audio & Operations": {
+            "Vocabulary": [
+                {"t": "clean → cleaned", "p": "kliːnd", "tr": "limpar / limpou", "ex": "We cleaned the tractor after use."},
+                {"t": "watch → watched", "p": "wɒtʃt", "tr": "assistir / assistiu", "ex": "I watched the market news."},
+                {"t": "want → wanted", "p": "ˈwɒntɪd", "tr": "querer / quis", "ex": "They wanted a bigger discount."},
+                {"t": "rest → rested", "p": "ˈrestɪd", "tr": "descansar / descansou", "ex": "The team rested after the harvest."},
+                {"t": "sales report", "p": "seɪlz rɪˈpɔːrt", "tr": "relatório de vendas", "ex": "Check the sales report for Q1."},
+                {"t": "proposal", "p": "prəˈpəʊzəl", "tr": "proposta", "ex": "The client accepted our proposal."},
+                {"t": "delivery", "p": "dɪˈlɪvəri", "tr": "entrega", "ex": "Expect the delivery by noon."},
+                {"t": "order", "p": "ˈɔːrdər", "tr": "pedido", "ex": "Place an order for more seeds."},
+                {"t": "voicemail", "p": "ˈvɔɪsmeɪl", "tr": "caixa de mensagens", "ex": "I left a voicemail for the director."},
+                {"t": "update", "p": "ʌpˈdeɪt", "tr": "atualização", "ex": "The software update is mandatory."},
+                {"t": "document", "p": "ˈdɒkjʊmənt", "tr": "documento", "ex": "Don't forget to sign the document."},
+                {"t": "kickoff meeting", "p": "ˈkɪkɒf ˈmiːtɪŋ", "tr": "reunião de início", "ex": "The kickoff meeting is tomorrow."}
+            ]
+        },
+        "DAY 5: Professional Practice": {
+            "Vocabulary": [
+                {"t": "I finished it before lunch", "p": "bɪˈfɔːr lʌntʃ", "tr": "terminei antes do almoço", "ex": "Good news: I finished it before lunch."},
+                {"t": "I emailed it to everyone", "p": "ˈeɪmeɪld ɪt", "tr": "enviei para todos", "ex": "Check your inbox, I emailed it to everyone."},
+                {"t": "I called three clients", "p": "kɔːld θriː", "tr": "liguei para três clientes", "ex": "I called three clients this morning."},
+                {"t": "We completed everything", "p": "kəmˈpliːtɪd", "tr": "completamos tudo", "ex": "We completed everything on the list."},
+                {"t": "The project is ready", "p": "ˈredi", "tr": "o projeto está pronto", "ex": "The project is ready for launch."},
+                {"t": "Good job!", "p": "ɡʊd dʒɒb", "tr": "bom trabalho!", "ex": "You fixed the issue. Good job!"},
+                {"t": "Great teamwork!", "p": "ɡreɪt ˈtiːmwɜːrk", "tr": "ótimo trabalho em equipe!", "ex": "We delivered on time. Great teamwork!"},
+                {"t": "They loved it!", "p": "lʌvd ɪt", "tr": "eles adoraram!", "ex": "I showed them the demo and they loved it!"},
+                {"t": "We worked together", "p": "wɜːrkt təˈɡeðər", "tr": "trabalhamos juntos", "ex": "We worked together at the previous company."},
+                {"t": "follow-up meeting", "p": "ˈfɒləʊʌp ˈmiːtɪŋ", "tr": "reunião de acompanhamento", "ex": "Let's schedule a follow-up meeting."},
+                {"t": "task", "p": "tɑːsk", "tr": "tarefa", "ex": "Your next task is to verify the sensors."}
+            ]
+        }
+    }
+
 # --- LÓGICA DO MOTOR ---
 st.sidebar.title("🚜 Talk Agribusiness")
 aula_sel = st.sidebar.selectbox("Escolha a Aula:", list(data.keys()))
