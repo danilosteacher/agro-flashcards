@@ -2,36 +2,8 @@ import streamlit as st
 from gtts import gTTS
 import io
 
-# Configuração de Página Premium
-st.set_page_config(page_title="Talk Agribusiness | Flashcards", page_icon="🚜", layout="centered")
-
-# --- ESTILIZAÇÃO CSS (UX/UI Otimizado) ---
-st.markdown("""
-    <style>
-    .stButton>button {
-        width: 100%;
-        border-radius: 12px;
-        height: 3.5em;
-        transition: all 0.3s ease;
-        font-weight: bold;
-        border: 1px solid #1E3A8A;
-    }
-    .stButton>button:hover {
-        transform: scale(1.02);
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    .flashcard-container {
-        background-color: white;
-        padding: 50px 30px;
-        border-radius: 25px;
-        box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-        text-align: center;
-        border: 1px solid #f0f2f6;
-        margin-bottom: 25px;
-    }
-    h1 { color: #1E3A8A; }
-    </style>
-    """, unsafe_allow_html=True)
+# Configuração de Página Estável
+st.set_page_config(page_title="Talk Agribusiness - Flashcards", page_icon="🚜", layout="wide")
 
 # --- BANCO DE DADOS COMPLETO (Aulas 14 e 15) ---
 data = {
@@ -114,136 +86,95 @@ data = {
             {"t": "email → emailed", "p": "ˈeɪmeɪld", "tr": "enviar email / enviou email", "ex": "I emailed the logistics department."},
             {"t": "finish → finished", "p": "ˈfɪnɪʃt", "tr": "terminar / terminou", "ex": "We finished the report before 5 PM."},
             {"t": "prepare → prepared", "p": "prɪˈperd", "tr": "preparar / preparou", "ex": "They prepared the presentation for the board."},
-            {"t": "talk → talked", "p": "tɔːkt", "tr": "conversar / conversou", "ex": "We talked about the new budget."},
-            {"t": "report", "p": "rɪˈpɔːrt", "tr": "relatório", "ex": "The sales report is on your desk."},
-            {"t": "client", "p": "ˈklaɪənt", "tr": "cliente", "ex": "The client is waiting in the lobby."},
-            {"t": "meeting", "p": "ˈmiːtɪŋ", "tr": "reunião", "ex": "The meeting starts in ten minutes."},
-            {"t": "team", "p": "tiːm", "tr": "equipe", "ex": "Our team won the safety award."},
-            {"t": "manager", "p": "ˈmænɪdʒər", "tr": "gerente", "ex": "The manager approved the travel expenses."},
-            {"t": "project", "p": "ˈprɒdʒekt", "tr": "projeto", "ex": "The irrigation project is almost complete."}
+            {"t": "talk → talked", "p": "tɔːkt", "tr": "conversar / conversou", "ex": "We talked about the new budget."}
         ],
         "DAY 2: Grammar & Logistics": [
             {"t": "check → checked", "p": "tʃekt", "tr": "verificar / verificou", "ex": "I checked the inventory levels."},
             {"t": "present → presented", "p": "prɪˈzentɪd", "tr": "apresentar / apresentou", "ex": "He presented the data at the seminar."},
-            {"t": "visit → visited", "p": "ˈvɪzɪtɪd", "tr": "visitar / visitou", "ex": "The agronomist visited the farm."},
-            {"t": "explain → explained", "p": "ɪkˈspleɪnd", "tr": "explicar / explicou", "ex": "The technician explained how the sensor works."},
-            {"t": "discuss → discussed", "p": "dɪˈskʌst", "tr": "discutir / discutiu", "ex": "We discussed the strategy for next year."},
-            {"t": "complete → completed", "p": "kəmˈpliːtɪd", "tr": "completar / completou", "ex": "They completed the training yesterday."},
-            {"t": "confirm → confirmed", "p": "kənˈfɜːrmd", "tr": "confirmar / confirmou", "ex": "She confirmed the flight to the summit."},
-            {"t": "schedule → scheduled", "p": "ˈskedʒuːld", "tr": "agendar / agendou", "ex": "I scheduled the meeting for Monday."},
-            {"t": "presentation", "p": "ˌpreznˈteɪʃn", "tr": "apresentação", "ex": "The presentation lasted one hour."},
-            {"t": "supplier", "p": "səˈplaɪər", "tr": "fornecedor", "ex": "Contact the supplier for more fertilizer."},
-            {"t": "deadline", "p": "ˈdedlaɪn", "tr": "prazo", "ex": "The deadline for the proposal is Friday."},
-            {"t": "contract", "p": "ˈkɒntrækt", "tr": "contrato", "ex": "Sign the contract and send it back."}
+            {"t": "visit → visited", "p": "ˈvɪzɪtɪd", "tr": "visitar / visitou", "ex": "The agronomist visited the farm."}
         ],
         "DAY 3: Time & Pronunciation": [
             {"t": "yesterday", "p": "ˈjestərdeɪ", "tr": "ontem", "ex": "The prices dropped yesterday."},
-            {"t": "yesterday morning", "p": "ˈjestərdeɪ ˈmɔːrnɪŋ", "tr": "ontem de manhã", "ex": "I was in the lab yesterday morning."},
-            {"t": "yesterday afternoon", "p": "ˈjestərdeɪ ˌæftərˈnuːn", "tr": "ontem à tarde", "ex": "The rain started yesterday afternoon."},
-            {"t": "last week", "p": "lɑːst wiːk", "tr": "semana passada", "ex": "We received the shipment last week."},
-            {"t": "last Friday", "p": "lɑːst ˈfraɪdeɪ", "tr": "última sexta-feira", "ex": "We closed the deal last Friday."},
-            {"t": "two days ago", "p": "tuː deɪz əˈgoʊ", "tr": "dois dias atrás", "ex": "The shipment arrived two days ago."},
-            {"t": "a week ago", "p": "ə wiːk əˈɡoʊ", "tr": "uma semana atrás", "ex": "The audit finished a week ago."},
-            {"t": "last month", "p": "lɑːst mʌnθ", "tr": "mês passado", "ex": "Our sales hit a record last month."},
-            {"t": "this morning", "p": "ðɪs ˈmɔːrnɪŋ", "tr": "esta manhã", "ex": "The power went out this morning."},
-            {"t": "on Monday", "p": "ɒn ˈmʌndeɪ", "tr": "na segunda-feira", "ex": "I have a flight on Monday."},
-            {"t": "before lunch", "p": "bɪˈfɔːr lʌntʃ", "tr": "antes do almoço", "ex": "Can we talk before lunch?"},
-            {"t": "on time", "p": "ɒn taɪm", "tr": "no horário", "ex": "The bus arrived exactly on time."}
+            {"t": "last week", "p": "lɑːst wiːk", "tr": "semana passada", "ex": "We received the shipment last week."}
         ],
         "DAY 4: Audio & Operations": [
             {"t": "clean → cleaned", "p": "kliːnd", "tr": "limpar / limpou", "ex": "We cleaned the tractor after use."},
-            {"t": "watch → watched", "p": "wɒtʃt", "tr": "assistir / assistiu", "ex": "I watched the market news."},
-            {"t": "want → wanted", "p": "ˈwɒntɪd", "tr": "querer / quis", "ex": "They wanted a bigger discount."},
-            {"t": "rest → rested", "p": "ˈrestɪd", "tr": "descansar / descansou", "ex": "The team rested after the harvest."},
-            {"t": "sales report", "p": "seɪlz rɪˈpɔːrt", "tr": "relatório de vendas", "ex": "Check the sales report for Q1."},
-            {"t": "proposal", "p": "prəˈpəʊzəl", "tr": "proposta", "ex": "The client accepted our proposal."},
-            {"t": "delivery", "p": "dɪˈlɪvəri", "tr": "entrega", "ex": "Expect the delivery by noon."},
-            {"t": "order", "p": "ˈɔːrdər", "tr": "pedido", "ex": "Place an order for more seeds."},
-            {"t": "voicemail", "p": "ˈvɔɪsmeɪl", "tr": "caixa de mensagens", "ex": "I left a voicemail for the director."},
-            {"t": "update", "p": "ʌpˈdeɪt", "tr": "atualização", "ex": "The software update is mandatory."},
-            {"t": "document", "p": "ˈdɒkjʊmənt", "tr": "documento", "ex": "Don't forget to sign the document."},
-            {"t": "kickoff meeting", "p": "ˈkɪkɒf ˈmiːtɪŋ", "tr": "reunião de início", "ex": "The kickoff meeting is tomorrow."}
+            {"t": "order", "p": "ˈɔːrdər", "tr": "pedido", "ex": "Place an order for more seeds."}
         ],
         "DAY 5: Professional Practice": [
             {"t": "I finished it before lunch", "p": "bɪˈfɔːr lʌntʃ", "tr": "terminei antes do almoço", "ex": "Good news: I finished it before lunch."},
-            {"t": "I emailed it to everyone", "p": "ˈeɪmeɪld ɪt", "tr": "enviei para todos", "ex": "Check your inbox, I emailed it to everyone."},
-            {"t": "I called three clients", "p": "kɔːld θriː", "tr": "liguei para três clientes", "ex": "I called three clients this morning."},
-            {"t": "We completed everything", "p": "kəmˈpliːtɪd", "tr": "completamos tudo", "ex": "We completed everything on the list."},
-            {"t": "The project is ready", "p": "ˈredi", "tr": "o projeto está pronto", "ex": "The project is ready for launch."},
-            {"t": "Good job!", "p": "ɡʊd dʒɒb", "tr": "bom trabalho!", "ex": "You fixed the issue. Good job!"},
-            {"t": "Great teamwork!", "p": "ɡreɪt ˈtiːmwɜːrk", "tr": "ótimo trabalho em equipe!", "ex": "We delivered on time. Great teamwork!"},
-            {"t": "They loved it!", "p": "lʌvd ɪt", "tr": "eles adoraram!", "ex": "I showed them the demo and they loved it!"},
-            {"t": "We worked together", "p": "wɜːrkt təˈɡeðər", "tr": "trabalhamos juntos", "ex": "We worked together at the previous company."},
-            {"t": "follow-up meeting", "p": "ˈfɒləʊʌp ˈmiːtɪŋ", "tr": "reunião de acompanhamento", "ex": "Let's schedule a follow-up meeting."},
-            {"t": "on time", "p": "ɒn taɪm", "tr": "no prazo / no horário", "ex": "Everything is on time."},
-            {"t": "task", "p": "tɑːsk", "tr": "tarefa", "ex": "Your next task is to verify the sensors."}
+            {"t": "Good job!", "p": "ɡʊd dʒɒb", "tr": "bom trabalho!", "ex": "You fixed the issue. Good job!"}
         ]
     }
 }
 
-# --- LÓGICA DO MOTOR ---
-st.sidebar.markdown("## 🚜 Talk Agribusiness")
-st.sidebar.markdown("---")
-aula_sel = st.sidebar.selectbox("Módulo:", list(data.keys()))
-dia_sel = st.sidebar.selectbox("Dia de Estudo:", list(data[aula_sel].keys()))
-
-lista_cards = data[aula_sel][dia_sel]
-
-# Controle de Sessão
-idx_key = f"{aula_sel}_{dia_sel}_idx"
-flipped_key = f"{aula_sel}_{dia_sel}_flipped"
-
-if idx_key not in st.session_state: st.session_state[idx_key] = 0
-if flipped_key not in st.session_state: st.session_state[flipped_key] = False
-
-idx = st.session_state[idx_key]
-card = lista_cards[idx]
-
-# --- INTERFACE ---
-st.title("Agro Executive Flashcards")
-st.write(f"Sessão: {aula_sel} | {dia_sel}")
-
-with st.container():
-    st.markdown('<div class="flashcard-container">', unsafe_allow_html=True)
-    
-    if not st.session_state[flipped_key]:
-        st.markdown(f"<h1 style='font-size: 55px; height: 140px; display: flex; align-items: center; justify-content: center;'>{card['t']}</h1>", unsafe_allow_html=True)
-        st.markdown(f"<p style='color: #6c757d; font-size: 20px;'>/{card.get('p', '')}/</p>", unsafe_allow_html=True)
-        
-        if st.button("🔄 REVELAR CONTEÚDO", type="primary"):
-            st.session_state[flipped_key] = True
-            st.rerun()
-    else:
-        st.markdown(f"<h2 style='color: #28a745; height: 100px; display: flex; align-items: center; justify-content: center;'>{card['tr']}</h2>", unsafe_allow_html=True)
-        st.divider()
-        st.markdown(f"**Exemplo de uso:**")
-        st.write(f"*{card.get('ex', '')}*")
-        
-        if st.button("⬅️ VOLTAR"):
-            st.session_state[flipped_key] = False
-            st.rerun()
-
-    st.markdown('</div>', unsafe_allow_html=True)
-
-if st.button("🔊 OUVIR PRONÚNCIA"):
-    texto_audio = card['t'].split('→')[-1].strip()
-    tts = gTTS(text=texto_audio, lang='en')
+# --- FUNÇÃO DE ÁUDIO ---
+def tocar_audio(texto):
+    texto_limpo = texto.split('→')[-1].strip()
+    tts = gTTS(text=texto_limpo, lang='en')
     fp = io.BytesIO()
     tts.write_to_fp(fp)
     st.audio(fp, format='audio/mp3')
 
+# --- INTERFACE ---
+st.sidebar.header("🚜 Talk Agribusiness")
+aula_sel = st.sidebar.selectbox("Aula:", list(data.keys()))
+dia_sel = st.sidebar.selectbox("Dia:", list(data[aula_sel].keys()))
+
+lista_cards = data[aula_sel][dia_sel]
+
+idx_key = f"{aula_sel}_{dia_sel}_idx"
+reveal_key = f"{aula_sel}_{dia_sel}_reveal"
+
+if idx_key not in st.session_state: st.session_state[idx_key] = 0
+if reveal_key not in st.session_state: st.session_state[reveal_key] = False
+
+idx = st.session_state[idx_key]
+card = lista_cards[idx]
+
+st.title("Agro Executive Flashcards")
+st.write(f"Sessão: {aula_sel} | {dia_sel}")
+
+with st.container(border=True):
+    # LADO A
+    st.markdown(f"<h1 style='text-align: center; font-size: 50px;'>{card['t']}</h1>", unsafe_allow_html=True)
+    st.markdown(f"<p style='text-align: center; color: #666;'>/{card.get('p', '')}/</p>", unsafe_allow_html=True)
+    
+    if st.button("🔊 Ouvir Palavra", use_container_width=True):
+        tocar_audio(card['t'])
+
+    st.divider()
+
+    # LADO B (REVELAR)
+    if not st.session_state[reveal_key]:
+        if st.button("🔍 REVELAR RESPOSTA", type="primary", use_container_width=True):
+            st.session_state[reveal_key] = True
+            st.rerun()
+    else:
+        st.success(f"**Tradução:** {card['tr']}")
+        st.info(f"**Exemplo:** *{card.get('ex', '')}*")
+        
+        # NOVO: Botão de áudio para a frase completa
+        if st.button("🔊 Ouvir Frase Exemplo", use_container_width=True):
+            tocar_audio(card['ex'])
+        
+        if st.button("🙈 Esconder Resposta", use_container_width=True):
+            st.session_state[reveal_key] = False
+            st.rerun()
+
+# NAVEGAÇÃO
 col1, col2, col3 = st.columns([1, 2, 1])
 with col1:
-    if st.button("ANTERIOR") and idx > 0:
+    if st.button("⬅️ Anterior", use_container_width=True) and idx > 0:
         st.session_state[idx_key] -= 1
-        st.session_state[flipped_key] = False
+        st.session_state[reveal_key] = False
         st.rerun()
 with col3:
-    if st.button("PRÓXIMO") and idx < len(lista_cards) - 1:
+    if st.button("Próximo ➡️", use_container_width=True) and idx < len(lista_cards) - 1:
         st.session_state[idx_key] += 1
-        st.session_state[flipped_key] = False
+        st.session_state[reveal_key] = False
         st.rerun()
 
-progresso = (idx + 1) / len(lista_cards)
-st.progress(progresso)
-st.markdown(f"<p style='text-align: center;'>Progresso: {idx + 1} de {len(lista_cards)}</p>", unsafe_allow_html=True)
+st.divider()
+st.progress((idx + 1) / len(lista_cards))
+st.write(f"Card {idx + 1} de {len(lista_cards)}")
