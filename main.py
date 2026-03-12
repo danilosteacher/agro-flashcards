@@ -177,6 +177,7 @@ with st.container(border=True):
         tts = gTTS(text=texto_limpo, lang='en')
         fp = io.BytesIO()
         tts.write_to_fp(fp)
+        fp.seek(0)
         st.audio(fp, format='audio/mp3')
 
 # Navegação
