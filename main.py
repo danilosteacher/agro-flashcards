@@ -134,7 +134,7 @@ data = {
             {"t": "You aren't a consultant", "p": "", "tr": "você não é consultor", "ex": "You aren't a consultant."}
         ]
     }
-}
+},
     
     "Aula 14: Corporate & Logistics": {
         "DAY 1": {
