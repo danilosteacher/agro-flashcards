@@ -136,7 +136,7 @@ data = {
     }
 },
 
-    "Aula 2: People & Work Context": {
+"Aula 2: People & Work Context": {
 
     "DAY 1": {
         "Vocabulary": [
