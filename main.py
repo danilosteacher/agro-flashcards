@@ -135,6 +135,129 @@ data = {
         ]
     }
 },
+
+    "Aula 2: People & Work Context": {
+
+    "DAY 1": {
+        "Vocabulary": [
+            {"t": "available", "p": "", "tr": "disponível", "ex": "He is available now."},
+            {"t": "in a meeting", "p": "", "tr": "em reunião", "ex": "She is in a meeting."},
+            {"t": "on vacation", "p": "", "tr": "de férias", "ex": "He is on vacation."},
+            {"t": "in the office", "p": "", "tr": "no escritório", "ex": "She is in the office."},
+            {"t": "at home", "p": "", "tr": "em casa", "ex": "They are at home."},
+            {"t": "sales coordinator", "p": "", "tr": "coordenador de vendas", "ex": "He is a sales coordinator."},
+            {"t": "engineer", "p": "", "tr": "engenheiro", "ex": "She is an engineer."},
+            {"t": "manager", "p": "", "tr": "gerente", "ex": "He is a manager."},
+            {"t": "boss", "p": "", "tr": "chefe", "ex": "She is my boss."},
+            {"t": "team", "p": "", "tr": "equipe", "ex": "This is my team."},
+            {"t": "supervisor", "p": "", "tr": "supervisor", "ex": "He is the supervisor."},
+            {"t": "excited", "p": "", "tr": "animado", "ex": "I am excited."},
+            {"t": "now", "p": "", "tr": "agora", "ex": "I am busy now."},
+            {"t": "right now", "p": "", "tr": "agora mesmo", "ex": "She is in a meeting right now."},
+            {"t": "extension", "p": "", "tr": "ramal", "ex": "My extension is 123."},
+            {"t": "She is", "p": "", "tr": "ela é/está", "ex": "She is ready."},
+            {"t": "He is", "p": "", "tr": "ele é/está", "ex": "He is available."},
+            {"t": "They are", "p": "", "tr": "eles são/estão", "ex": "They are busy."},
+            {"t": "This is", "p": "", "tr": "este/esta é", "ex": "This is my manager."}
+        ]
+    },
+
+    "DAY 2": {
+        "Vocabulary": [
+            {"t": "He is not", "p": "", "tr": "ele não é/está", "ex": "He is not available."},
+            {"t": "She is not", "p": "", "tr": "ela não é/está", "ex": "She is not here."},
+            {"t": "They are not", "p": "", "tr": "eles não são/estão", "ex": "They are not ready."},
+            {"t": "Is she?", "p": "", "tr": "ela é/está?", "ex": "Is she available?"},
+            {"t": "Is he?", "p": "", "tr": "ele é/está?", "ex": "Is he busy?"},
+            {"t": "Are they?", "p": "", "tr": "eles são/estão?", "ex": "Are they at work?"},
+            {"t": "agronomist", "p": "", "tr": "agrônomo", "ex": "He is an agronomist."},
+            {"t": "veterinarian", "p": "", "tr": "veterinário", "ex": "She is a veterinarian."},
+            {"t": "sales team", "p": "", "tr": "equipe de vendas", "ex": "I am in the sales team."},
+            {"t": "finance team", "p": "", "tr": "equipe financeira", "ex": "She is in the finance team."},
+            {"t": "logistics team", "p": "", "tr": "equipe de logística", "ex": "He is in the logistics team."},
+            {"t": "operations team", "p": "", "tr": "equipe de operações", "ex": "They are in operations."},
+            {"t": "HR team", "p": "", "tr": "recursos humanos", "ex": "She works in HR."},
+            {"t": "agribusiness sector", "p": "", "tr": "setor do agronegócio", "ex": "I work in agribusiness."},
+            {"t": "legal team", "p": "", "tr": "equipe jurídica", "ex": "He is in the legal team."},
+            {"t": "IT team", "p": "", "tr": "equipe de TI", "ex": "She is in IT."},
+            {"t": "at a conference", "p": "", "tr": "em uma conferência", "ex": "They are at a conference."},
+            {"t": "on a business trip", "p": "", "tr": "em viagem de negócios", "ex": "He is on a business trip."},
+            {"t": "at an event", "p": "", "tr": "em um evento", "ex": "She is at an event."},
+            {"t": "happy", "p": "", "tr": "feliz", "ex": "I am happy."},
+            {"t": "excited", "p": "", "tr": "animado", "ex": "They are excited."},
+            {"t": "tired", "p": "", "tr": "cansado", "ex": "He is tired."},
+            {"t": "ready", "p": "", "tr": "pronto", "ex": "She is ready."}
+        ]
+    },
+
+    "DAY 3": {
+        "Vocabulary": [
+            {"t": "ten", "p": "", "tr": "dez", "ex": "Ten people are here."},
+            {"t": "eleven", "p": "", "tr": "onze", "ex": "Eleven workers."},
+            {"t": "twelve", "p": "", "tr": "doze", "ex": "Twelve months."},
+            {"t": "thirteen", "p": "", "tr": "treze", "ex": "Thirteen days."},
+            {"t": "fourteen", "p": "", "tr": "quatorze", "ex": "Fourteen teams."},
+            {"t": "fifteen", "p": "", "tr": "quinze", "ex": "Fifteen minutes."},
+            {"t": "sixteen", "p": "", "tr": "dezesseis", "ex": "Sixteen employees."},
+            {"t": "seventeen", "p": "", "tr": "dezessete", "ex": "Seventeen clients."},
+            {"t": "eighteen", "p": "", "tr": "dezoito", "ex": "Eighteen calls."},
+            {"t": "nineteen", "p": "", "tr": "dezenove", "ex": "Nineteen emails."},
+            {"t": "twenty", "p": "", "tr": "vinte", "ex": "Twenty people."},
+            {"t": "twenty-one", "p": "", "tr": "vinte e um", "ex": "Twenty-one days."},
+            {"t": "twenty-two", "p": "", "tr": "vinte e dois", "ex": "Twenty-two workers."},
+            {"t": "twenty-five", "p": "", "tr": "vinte e cinco", "ex": "Twenty-five meetings."},
+            {"t": "thirty", "p": "", "tr": "trinta", "ex": "Thirty days."},
+            {"t": "week", "p": "", "tr": "semana", "ex": "This week is busy."},
+            {"t": "today", "p": "", "tr": "hoje", "ex": "Today is Monday."},
+            {"t": "Monday", "p": "", "tr": "segunda-feira", "ex": "Meeting on Monday."},
+            {"t": "Tuesday", "p": "", "tr": "terça-feira", "ex": "Call on Tuesday."},
+            {"t": "Wednesday", "p": "", "tr": "quarta-feira", "ex": "Event on Wednesday."},
+            {"t": "Thursday", "p": "", "tr": "quinta-feira", "ex": "Trip on Thursday."},
+            {"t": "Friday", "p": "", "tr": "sexta-feira", "ex": "Deadline Friday."},
+            {"t": "Saturday", "p": "", "tr": "sábado", "ex": "Work on Saturday."},
+            {"t": "Sunday", "p": "", "tr": "domingo", "ex": "Rest on Sunday."}
+        ]
+    },
+
+    "DAY 4": {
+        "Vocabulary": [
+            {"t": "He works in", "p": "", "tr": "ele trabalha em", "ex": "He works in logistics."},
+            {"t": "She works in", "p": "", "tr": "ela trabalha em", "ex": "She works in finance."},
+            {"t": "My extension is", "p": "", "tr": "meu ramal é", "ex": "My extension is 456."},
+            {"t": "The meeting is on", "p": "", "tr": "a reunião é na", "ex": "The meeting is on Monday."},
+            {"t": "He is available on", "p": "", "tr": "ele está disponível na", "ex": "He is available on Tuesday."},
+            {"t": "She is in room", "p": "", "tr": "ela está na sala", "ex": "She is in room 10."},
+            {"t": "The conference is on floor", "p": "", "tr": "a conferência é no andar", "ex": "The conference is on floor 2."},
+            {"t": "Is he available on", "p": "", "tr": "ele está disponível na?", "ex": "Is he available on Friday?"},
+            {"t": "They are on the team", "p": "", "tr": "eles estão na equipe", "ex": "They are on the finance team."},
+            {"t": "floor", "p": "", "tr": "andar", "ex": "Second floor."},
+            {"t": "Who is", "p": "", "tr": "quem é", "ex": "Who is your manager?"},
+            {"t": "Where is", "p": "", "tr": "onde está", "ex": "Where is he?"},
+            {"t": "Who are they?", "p": "", "tr": "quem são eles?", "ex": "Who are they?"},
+            {"t": "Where are they?", "p": "", "tr": "onde eles estão?", "ex": "Where are they?"}
+        ]
+    },
+
+    "DAY 5": {
+        "Vocabulary": [
+            {"t": "Who is your manager?", "p": "", "tr": "quem é seu gerente?", "ex": "Who is your manager?"},
+            {"t": "Where is your manager right now?", "p": "", "tr": "onde está seu gerente agora?", "ex": "Where is your manager right now?"},
+            {"t": "Is your manager available?", "p": "", "tr": "seu gerente está disponível?", "ex": "Is your manager available?"},
+            {"t": "Who is on your team?", "p": "", "tr": "quem está na sua equipe?", "ex": "Who is on your team?"},
+            {"t": "What department are they in?", "p": "", "tr": "em qual departamento eles estão?", "ex": "What department are they in?"},
+            {"t": "Are they busy today?", "p": "", "tr": "eles estão ocupados hoje?", "ex": "Are they busy today?"},
+            {"t": "Is your manager on vacation?", "p": "", "tr": "seu gerente está de férias?", "ex": "Is your manager on vacation?"},
+            {"t": "Who is at the conference?", "p": "", "tr": "quem está na conferência?", "ex": "Who is at the conference?"},
+            {"t": "What is your extension?", "p": "", "tr": "qual é seu ramal?", "ex": "What is your extension?"},
+            {"t": "Is he busy today?", "p": "", "tr": "ele está ocupado hoje?", "ex": "Is he busy today?"},
+            {"t": "Is she available now?", "p": "", "tr": "ela está disponível agora?", "ex": "Is she available now?"},
+            {"t": "Are they at the conference?", "p": "", "tr": "eles estão na conferência?", "ex": "Are they at the conference?"},
+            {"t": "They aren't on vacation", "p": "", "tr": "eles não estão de férias", "ex": "They aren't on vacation."},
+            {"t": "She isn't a manager", "p": "", "tr": "ela não é gerente", "ex": "She isn't a manager."},
+            {"t": "They aren't at work", "p": "", "tr": "eles não estão no trabalho", "ex": "They aren't at work today."}
+        ]
+    }
+},
     
     "Aula 14: Corporate & Logistics": {
         "DAY 1": {
