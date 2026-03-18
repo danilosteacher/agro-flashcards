@@ -344,7 +344,7 @@ data = {
             {"t": "at home", "p": "", "tr": "em casa", "ex": "I work at home."}
         ]
     }
-}
+},
     
     "Aula 14: Corporate & Logistics": {
         "DAY 1": {
