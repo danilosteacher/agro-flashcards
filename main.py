@@ -258,6 +258,93 @@ data = {
         ]
     }
 },
+"Bridge 1: What Do You Like?": {
+
+    "DAY 1": {
+        "Vocabulary": [
+            {"t": "like", "p": "", "tr": "gostar", "ex": "I like movies."},
+            {"t": "want", "p": "", "tr": "querer", "ex": "I want to study."},
+            {"t": "need", "p": "", "tr": "precisar", "ex": "I need to arrive early."},
+            {"t": "prefer", "p": "", "tr": "preferir", "ex": "I prefer to work from home."},
+            {"t": "watch", "p": "", "tr": "assistir", "ex": "I like to watch series."},
+            {"t": "visit", "p": "", "tr": "visitar", "ex": "I want to visit the farm."},
+            {"t": "study", "p": "", "tr": "estudar", "ex": "I need to study English."},
+            {"t": "work", "p": "", "tr": "trabalhar", "ex": "I prefer to work at home."},
+            {"t": "rest", "p": "", "tr": "descansar", "ex": "I want to rest today."},
+            {"t": "go", "p": "", "tr": "ir", "ex": "I go to the office."},
+            {"t": "arrive", "p": "", "tr": "chegar", "ex": "I arrive at the farm early."},
+            {"t": "come", "p": "", "tr": "vir", "ex": "I come to work every day."}
+        ]
+    },
+
+    "DAY 2": {
+        "Vocabulary": [
+            {"t": "office", "p": "", "tr": "escritório", "ex": "I go to the office in the morning."},
+            {"t": "home", "p": "", "tr": "casa", "ex": "I prefer to work from home."},
+            {"t": "farm", "p": "", "tr": "fazenda", "ex": "I like to visit the farm."},
+            {"t": "park", "p": "", "tr": "parque", "ex": "I go to the park with my son."},
+            {"t": "mall", "p": "", "tr": "shopping", "ex": "I want to go to the mall."},
+            {"t": "movies", "p": "", "tr": "cinema", "ex": "I like to go to the movies."},
+            {"t": "church", "p": "", "tr": "igreja", "ex": "I go to church with my family."},
+            {"t": "downtown", "p": "", "tr": "centro", "ex": "I like to go downtown."},
+            {"t": "mother", "p": "", "tr": "mãe", "ex": "I go with my mother."},
+            {"t": "father", "p": "", "tr": "pai", "ex": "I visit my father."},
+            {"t": "brother", "p": "", "tr": "irmão", "ex": "I study with my brother."},
+            {"t": "sister", "p": "", "tr": "irmã", "ex": "I go with my sister."}
+        ]
+    },
+
+    "DAY 3": {
+        "Vocabulary": [
+            {"t": "wife", "p": "", "tr": "esposa", "ex": "I go with my wife."},
+            {"t": "husband", "p": "", "tr": "marido", "ex": "She goes with her husband."},
+            {"t": "son", "p": "", "tr": "filho", "ex": "I go with my son."},
+            {"t": "daughter", "p": "", "tr": "filha", "ex": "I go with my daughter."},
+            {"t": "leave", "p": "", "tr": "sair", "ex": "I leave at 6 PM."},
+            {"t": "start", "p": "", "tr": "começar", "ex": "I start work early."},
+            {"t": "finish", "p": "", "tr": "terminar", "ex": "I finish at 5 PM."},
+            {"t": "don't", "p": "", "tr": "não", "ex": "I don't like to work on weekends."},
+            {"t": "doesn't", "p": "", "tr": "não (3ª pessoa)", "ex": "She doesn't want to go."},
+            {"t": "do", "p": "", "tr": "auxiliar", "ex": "Do you like English?"},
+            {"t": "where", "p": "", "tr": "onde", "ex": "Where do you go?"},
+            {"t": "what", "p": "", "tr": "o que", "ex": "What do you like?"}
+        ]
+    },
+
+    "DAY 4": {
+        "Vocabulary": [
+            {"t": "happy", "p": "", "tr": "feliz", "ex": "I am happy."},
+            {"t": "excited", "p": "", "tr": "animado", "ex": "I am excited."},
+            {"t": "tired", "p": "", "tr": "cansado", "ex": "I am tired."},
+            {"t": "busy", "p": "", "tr": "ocupado", "ex": "I am busy today."},
+            {"t": "free", "p": "", "tr": "livre", "ex": "I am free."},
+            {"t": "ready", "p": "", "tr": "pronto", "ex": "I am ready."},
+            {"t": "worried", "p": "", "tr": "preocupado", "ex": "I am worried."},
+            {"t": "nervous", "p": "", "tr": "nervoso", "ex": "I am nervous."},
+            {"t": "sad", "p": "", "tr": "triste", "ex": "I am sad."},
+            {"t": "available", "p": "", "tr": "disponível", "ex": "I am available."},
+            {"t": "on weekends", "p": "", "tr": "nos fins de semana", "ex": "I rest on weekends."},
+            {"t": "in the morning", "p": "", "tr": "de manhã", "ex": "I work in the morning."}
+        ]
+    },
+
+    "DAY 5": {
+        "Vocabulary": [
+            {"t": "colleague", "p": "", "tr": "colega", "ex": "I work with my colleague."},
+            {"t": "client", "p": "", "tr": "cliente", "ex": "I visit my client."},
+            {"t": "team", "p": "", "tr": "equipe", "ex": "I work with my team."},
+            {"t": "meeting", "p": "", "tr": "reunião", "ex": "I have a meeting."},
+            {"t": "schedule", "p": "", "tr": "agenda", "ex": "I have a full schedule."},
+            {"t": "business trip", "p": "", "tr": "viagem de negócios", "ex": "I am on a business trip."},
+            {"t": "international", "p": "", "tr": "internacional", "ex": "International clients."},
+            {"t": "every day", "p": "", "tr": "todos os dias", "ex": "I study every day."},
+            {"t": "on Mondays", "p": "", "tr": "às segundas", "ex": "I work on Mondays."},
+            {"t": "after work", "p": "", "tr": "depois do trabalho", "ex": "I rest after work."},
+            {"t": "early", "p": "", "tr": "cedo", "ex": "I arrive early."},
+            {"t": "at home", "p": "", "tr": "em casa", "ex": "I work at home."}
+        ]
+    }
+}
     
     "Aula 14: Corporate & Logistics": {
         "DAY 1": {
