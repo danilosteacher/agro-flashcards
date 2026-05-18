@@ -13,29 +13,333 @@ st.set_page_config(
 )
 
 # -------------------------
+# CSS CUSTOMIZADO
+# -------------------------
+st.markdown("""
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    html, body, [class*="css"] {
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Remove Streamlit default padding */
+    .block-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        max-width: 720px;
+    }
+
+    /* Hide Streamlit header/footer */
+    header[data-testid="stHeader"] { display: none; }
+    footer { display: none; }
+    #MainMenu { display: none; }
+
+    /* ---- Sidebar ---- */
+    [data-testid="stSidebar"] {
+        background: #0d1117;
+        border-right: 1px solid #1e2530;
+    }
+    [data-testid="stSidebar"] * {
+        color: #e2e8f0 !important;
+    }
+    [data-testid="stSidebar"] .stSelectbox label {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #64748b !important;
+        margin-bottom: 4px;
+    }
+    [data-testid="stSidebar"] [data-baseweb="select"] > div {
+        background: #1a2233 !important;
+        border: 1px solid #2a3548 !important;
+        border-radius: 10px !important;
+        color: #e2e8f0 !important;
+    }
+    [data-testid="stSidebar"] [data-baseweb="select"] > div:hover {
+        border-color: #3b82f6 !important;
+    }
+
+    /* Sidebar title */
+    .sidebar-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 0 24px 0;
+        border-bottom: 1px solid #1e2530;
+        margin-bottom: 20px;
+    }
+    .sidebar-logo-icon {
+        width: 36px;
+        height: 36px;
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+    .sidebar-logo-text {
+        font-weight: 700;
+        font-size: 15px;
+        color: #f8fafc;
+        line-height: 1.2;
+    }
+    .sidebar-logo-sub {
+        font-size: 11px;
+        color: #64748b;
+        font-weight: 400;
+    }
+
+    /* ---- Main area header ---- */
+    .page-header {
+        margin-bottom: 28px;
+    }
+    .page-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #0f172a;
+        letter-spacing: -0.3px;
+        margin: 0 0 4px 0;
+    }
+    .page-subtitle {
+        font-size: 13px;
+        color: #64748b;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    /* ---- Progress bar ---- */
+    .progress-wrap {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+    .progress-track {
+        flex: 1;
+        height: 4px;
+        background: #e2e8f0;
+        border-radius: 99px;
+        overflow: hidden;
+    }
+    .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+        border-radius: 99px;
+        transition: width 0.4s ease;
+    }
+    .progress-label {
+        font-size: 12px;
+        font-weight: 600;
+        color: #94a3b8;
+        white-space: nowrap;
+    }
+
+    /* ---- Flashcard ---- */
+    .flashcard {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 20px;
+        padding: 48px 40px;
+        text-align: center;
+        min-height: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 20px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.04);
+        position: relative;
+        overflow: hidden;
+    }
+    .flashcard::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    }
+    .card-term {
+        font-size: 42px;
+        font-weight: 700;
+        color: #0f172a;
+        letter-spacing: -1px;
+        line-height: 1.2;
+        margin: 0;
+    }
+    .card-term-long {
+        font-size: 22px;
+        font-weight: 600;
+        color: #0f172a;
+        letter-spacing: -0.3px;
+        line-height: 1.4;
+        margin: 0;
+    }
+    .card-phonetic {
+        font-size: 16px;
+        color: #94a3b8;
+        font-weight: 400;
+        margin: 0;
+        font-style: italic;
+    }
+    .card-flip-hint {
+        font-size: 12px;
+        color: #cbd5e1;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-top: 8px;
+    }
+
+    /* Flashcard — back side */
+    .flashcard-back {
+        background: #f8faff;
+        border-color: #dbeafe;
+    }
+    .flashcard-back::before {
+        background: linear-gradient(90deg, #10b981, #3b82f6);
+    }
+    .card-translation {
+        font-size: 28px;
+        font-weight: 700;
+        color: #1e40af;
+        letter-spacing: -0.3px;
+        margin: 0;
+    }
+    .card-translation-long {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1e40af;
+        line-height: 1.4;
+        margin: 0;
+    }
+    .card-example-label {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #94a3b8;
+        margin: 8px 0 4px 0;
+    }
+    .card-example {
+        font-size: 17px;
+        color: #334155;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 480px;
+    }
+
+    /* ---- Buttons ---- */
+    .stButton > button {
+        border-radius: 12px !important;
+        font-family: 'Inter', sans-serif !important;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        transition: all 0.18s ease !important;
+        border: 1.5px solid !important;
+        padding: 10px 20px !important;
+        height: auto !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Primary buttons (reveal/back) */
+    div[data-testid="stVerticalBlock"] > div:nth-child(1) .stButton > button,
+    .reveal-btn .stButton > button {
+        background: #1d4ed8 !important;
+        color: #ffffff !important;
+        border-color: #1d4ed8 !important;
+        width: 100% !important;
+        padding: 14px 24px !important;
+        font-size: 15px !important;
+        border-radius: 14px !important;
+    }
+    div[data-testid="stVerticalBlock"] > div:nth-child(1) .stButton > button:hover {
+        background: #1e40af !important;
+        border-color: #1e40af !important;
+        transform: translateY(-1px);
+    }
+
+    /* Audio button */
+    .audio-btn .stButton > button {
+        background: transparent !important;
+        color: #3b82f6 !important;
+        border-color: #bfdbfe !important;
+        width: 100% !important;
+    }
+    .audio-btn .stButton > button:hover {
+        background: #eff6ff !important;
+        border-color: #93c5fd !important;
+    }
+
+    /* Nav buttons */
+    .nav-btn .stButton > button {
+        background: transparent !important;
+        color: #475569 !important;
+        border-color: #e2e8f0 !important;
+        width: 100% !important;
+        padding: 12px 20px !important;
+    }
+    .nav-btn .stButton > button:hover {
+        background: #f1f5f9 !important;
+        border-color: #cbd5e1 !important;
+        color: #0f172a !important;
+    }
+    .nav-btn .stButton > button:disabled {
+        opacity: 0.35 !important;
+        cursor: not-allowed !important;
+    }
+
+    /* ---- Badge / day chip ---- */
+    .day-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #eff6ff;
+        color: #1d4ed8;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 5px 12px;
+        border-radius: 99px;
+        border: 1px solid #bfdbfe;
+        margin-bottom: 16px;
+    }
+
+    /* ---- Divider ---- */
+    hr {
+        border: none;
+        border-top: 1px solid #f1f5f9;
+        margin: 24px 0 !important;
+    }
+
+    /* Hide default streamlit progress */
+    .stProgress { display: none; }
+</style>
+""", unsafe_allow_html=True)
+
+# -------------------------
 # FUNÇÃO DE ÁUDIO
 # -------------------------
 @st.cache_data
 def gerar_audio(texto):
     tts = gTTS(text=texto, lang="en")
-    
     mp3_fp = io.BytesIO()
     tts.write_to_fp(mp3_fp)
-    
     mp3_fp.seek(0)
-    
     return mp3_fp.read()
 
 
 def tocar_audio(audio_bytes):
     b64 = base64.b64encode(audio_bytes).decode()
-    
     audio_html = f"""
         <audio controls autoplay>
         <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
         </audio>
     """
-    
     st.markdown(audio_html, unsafe_allow_html=True)
 
 
@@ -534,12 +838,29 @@ data = {
 # -------------------------
 # SIDEBAR
 # -------------------------
-st.sidebar.title("🚜 Talk Agribusiness")
+with st.sidebar:
+    st.markdown("""
+    <div class="sidebar-logo">
+        <div class="sidebar-logo-icon">🚜</div>
+        <div>
+            <div class="sidebar-logo-text">Talk Agribusiness</div>
+            <div class="sidebar-logo-sub">Flashcard System</div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
-aula_sel = st.sidebar.selectbox("Escolha a Aula:", list(data.keys()))
-dia_sel = st.sidebar.selectbox("Escolha o Dia:", list(data[aula_sel].keys()))
+    aula_sel = st.selectbox("Módulo", list(data.keys()), label_visibility="visible")
+    dia_sel = st.selectbox("Dia", list(data[aula_sel].keys()), label_visibility="visible")
 
-lista_cards = data[aula_sel][dia_sel]["Vocabulary"]
+    lista_cards = data[aula_sel][dia_sel]["Vocabulary"]
+    total = len(lista_cards)
+
+    st.markdown("---")
+    st.markdown(f"""
+    <div style="font-size:12px; color:#475569; line-height:1.8;">
+        <div style="margin-bottom:4px;">📚 <b style="color:#e2e8f0">{total}</b> cards neste dia</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 # -------------------------
 # SESSION STATE
@@ -549,82 +870,111 @@ flip_key = f"{aula_sel}_{dia_sel}_flip"
 
 if idx_key not in st.session_state:
     st.session_state[idx_key] = 0
-
 if flip_key not in st.session_state:
     st.session_state[flip_key] = False
 
 idx = st.session_state[idx_key]
 card = lista_cards[idx]
+total = len(lista_cards)
+pct = (idx + 1) / total
 
 # -------------------------
-# INTERFACE
+# HEADER
 # -------------------------
-st.title("Flashcards: Pronúncia & Contexto")
-st.caption(f"Foco: {dia_sel}")
+st.markdown(f"""
+<div class="page-header">
+    <div class="day-badge">📅 {dia_sel}</div>
+    <p class="page-title">Flashcards de Vocabulário</p>
+    <p class="page-subtitle">{aula_sel}</p>
+</div>
+""", unsafe_allow_html=True)
 
-with st.container(border=True):
+# Progress bar
+st.markdown(f"""
+<div class="progress-wrap">
+    <div class="progress-track">
+        <div class="progress-fill" style="width:{pct*100:.1f}%"></div>
+    </div>
+    <span class="progress-label">{idx+1} / {total}</span>
+</div>
+""", unsafe_allow_html=True)
 
-    if not st.session_state[flip_key]:
+# -------------------------
+# FLASHCARD
+# -------------------------
+termo = card['t']
+is_long = len(termo) > 30
+term_class = "card-term-long" if is_long else "card-term"
 
-        st.markdown(
-            f"<h1 style='text-align:center;font-size:55px;height:160px;display:flex;align-items:center;justify-content:center'>{card['t']}</h1>",
-            unsafe_allow_html=True
-        )
+if not st.session_state[flip_key]:
+    phonetic_html = f'<p class="card-phonetic">/{card.get("p", "")}/</p>' if card.get("p") else ""
+    st.markdown(f"""
+    <div class="flashcard">
+        <p class="{term_class}">{termo}</p>
+        {phonetic_html}
+        <p class="card-flip-hint">↓ clique para revelar</p>
+    </div>
+    """, unsafe_allow_html=True)
 
-        st.markdown(
-            f"<p style='text-align:center;color:gray;font-size:20px'>/{card.get('p','')}/</p>",
-            unsafe_allow_html=True
-        )
+    if st.button("🔄  Revelar tradução & exemplo", use_container_width=True):
+        st.session_state[flip_key] = True
+        st.rerun()
 
-        if st.button("🔄 REVELAR TRADUÇÃO & EXEMPLO"):
-            st.session_state[flip_key] = True
-            st.rerun()
+else:
+    tr = card['tr']
+    ex = card['ex']
+    tr_class = "card-translation-long" if len(tr) > 35 else "card-translation"
 
-    else:
+    st.markdown(f"""
+    <div class="flashcard flashcard-back">
+        <p class="{tr_class}">{tr}</p>
+        <p class="card-example-label">Exemplo</p>
+        <p class="card-example">"{ex}"</p>
+    </div>
+    """, unsafe_allow_html=True)
 
-        st.markdown(
-            f"<h2 style='text-align:center;color:#2E7D32'>{card['tr']}</h2>",
-            unsafe_allow_html=True
-        )
+    if st.button("⬅️  Voltar ao termo", use_container_width=True):
+        st.session_state[flip_key] = False
+        st.rerun()
 
-        st.write("**Exemplo:**")
-        st.write(card["ex"])
-
-        if st.button("⬅️ VOLTAR"):
-            st.session_state[flip_key] = False
-            st.rerun()
-
-    # -------------------------
-    # BOTÃO DE ÁUDIO
-    # -------------------------
-    if st.button("🔊 OUVIR PRONÚNCIA"):
-
+# -------------------------
+# ÁUDIO
+# -------------------------
+col_audio, _ = st.columns([1, 2])
+with col_audio:
+    if st.button("🔊  Ouvir pronúncia", use_container_width=True):
         texto_limpo = card["t"].split("→")[-1].strip()
-
         audio_bytes = gerar_audio(texto_limpo)
-
         tocar_audio(audio_bytes)
-
 
 # -------------------------
 # NAVEGAÇÃO
 # -------------------------
-col1, col2, col3 = st.columns([1,2,1])
+st.markdown("<hr>", unsafe_allow_html=True)
+
+col1, col_mid, col3 = st.columns([1, 2, 1])
 
 with col1:
-    if st.button("Anterior") and idx > 0:
+    disabled_prev = idx == 0
+    if st.button("← Anterior", use_container_width=True, disabled=disabled_prev):
         st.session_state[idx_key] -= 1
         st.session_state[flip_key] = False
         st.rerun()
 
+with col_mid:
+    dots = ""
+    for i in range(min(total, 10)):
+        mapped = int(i * total / min(total, 10))
+        active = mapped == idx
+        color = "#1d4ed8" if active else "#e2e8f0"
+        dots += f'<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:{color};margin:0 3px;"></span>'
+    if total > 10:
+        dots += f'<span style="font-size:11px;color:#94a3b8;margin-left:4px;">+{total-10}</span>'
+    st.markdown(f'<div style="text-align:center;padding-top:8px;">{dots}</div>', unsafe_allow_html=True)
+
 with col3:
-    if st.button("Próximo") and idx < len(lista_cards)-1:
+    disabled_next = idx >= total - 1
+    if st.button("Próximo →", use_container_width=True, disabled=disabled_next):
         st.session_state[idx_key] += 1
         st.session_state[flip_key] = False
         st.rerun()
-
-st.divider()
-
-st.progress((idx + 1) / len(lista_cards))
-
-st.write(f"Card {idx + 1} de {len(lista_cards)}")
