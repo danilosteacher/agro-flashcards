@@ -116,6 +116,78 @@ data = {
         ]
     }
 },
+    "Método T.A.L.K - Week 2": {
+    "DAY 1": {
+        "Vocabulary": [
+            {"t": "agronomist", "p": "əˈɡrɑːnəmɪst", "tr": "agrônomo/agrônoma", "ex": "She is an agronomist."},
+            {"t": "veterinarian", "p": "ˌvetərɪˈneriən", "tr": "veterinário/veterinária", "ex": "He is a veterinarian."},
+            {"t": "sales manager", "p": "seɪlz ˈmænɪdʒər", "tr": "gerente de vendas", "ex": "He is the sales manager."},
+            {"t": "coordinator", "p": "koʊˈɔːrdɪneɪtər", "tr": "coordenador/coordenadora", "ex": "She is a coordinator."},
+            {"t": "at the farm", "p": "æt ðə fɑːrm", "tr": "na fazenda", "ex": "He is at the farm today."},
+            {"t": "at the office", "p": "æt ðə ˈɑːfɪs", "tr": "no escritório", "ex": "She is at the office."},
+            {"t": "in the field", "p": "ɪn ðə fiːld", "tr": "no campo", "ex": "He is in the field."},
+            {"t": "busy", "p": "ˈbɪzi", "tr": "ocupado/ocupada", "ex": "She is busy right now."},
+            {"t": "ready", "p": "ˈredi", "tr": "pronto/pronta", "ex": "He is ready for the meeting."},
+            {"t": "This is", "p": "ðɪs ɪz", "tr": "Este/Esta é (para apresentar alguém)", "ex": "This is Ana. She is an agronomist."}
+        ]
+    },
+    "DAY 2": {
+        "Vocabulary": [
+            {"t": "technical analyst", "p": "ˈteknɪkl ˈænəlɪst", "tr": "analista técnico/a", "ex": "She is a technical analyst."},
+            {"t": "field representative", "p": "fiːld ˌreprɪˈzentətɪv", "tr": "representante de campo", "ex": "He is a field representative."},
+            {"t": "consultant", "p": "kənˈsʌltənt", "tr": "consultor/consultora", "ex": "He is a consultant."},
+            {"t": "director", "p": "dəˈrektər", "tr": "diretor/diretora", "ex": "She is the director."},
+            {"t": "at the branch", "p": "æt ðə bræntʃ", "tr": "na filial", "ex": "He is at the branch today."},
+            {"t": "at the headquarters", "p": "æt ðə ˈhedkwɔːrtərz", "tr": "na matriz / sede", "ex": "They are at the headquarters."},
+            {"t": "available", "p": "əˈveɪləbl", "tr": "disponível", "ex": "She is available for the meeting."},
+            {"t": "in training", "p": "ɪn ˈtreɪnɪŋ", "tr": "em treinamento", "ex": "They are in training."},
+            {"t": "These are", "p": "ðiːz ɑːr", "tr": "Estes/Estas são (para apresentar 2+ pessoas)", "ex": "These are Ana and Pedro."},
+            {"t": "They are / They're", "p": "ðeɪ ɑːr / ðer", "tr": "Eles/Elas são / estão", "ex": "They are agronomists. They're ready."}
+        ]
+    },
+    "DAY 3": {
+        "Vocabulary": [
+            {"t": "Is he...?", "p": "ɪz hiː", "tr": "Ele é / está...?", "ex": "Is he the manager?"},
+            {"t": "Is she...?", "p": "ɪz ʃiː", "tr": "Ela é / está...?", "ex": "Is she at the farm?"},
+            {"t": "Are they...?", "p": "ɑːr ðeɪ", "tr": "Eles/Elas são / estão...?", "ex": "Are they available?"},
+            {"t": "Yes, he is.", "p": "jes hiː ɪz", "tr": "Sim, ele é / está.", "ex": "Is he ready? Yes, he is."},
+            {"t": "Yes, she is.", "p": "jes ʃiː ɪz", "tr": "Sim, ela é / está.", "ex": "Is she the analyst? Yes, she is."},
+            {"t": "No, he isn't.", "p": "noʊ hiː ˈɪznt", "tr": "Não, ele não é / está.", "ex": "Is he at the office? No, he isn't."},
+            {"t": "No, they aren't.", "p": "noʊ ðeɪ ˈɑːrnt", "tr": "Não, eles/elas não são / estão.", "ex": "Are they ready? No, they aren't."},
+            {"t": "and", "p": "ænd", "tr": "e (para adicionar informação)", "ex": "She is busy and she is at the farm."},
+            {"t": "but", "p": "bʌt", "tr": "mas (para contrastar)", "ex": "He is busy, but he is ready."},
+            {"t": "on a business trip", "p": "ɑːn ə ˈbɪznəs trɪp", "tr": "em viagem de trabalho", "ex": "She is on a business trip today."}
+        ]
+    },
+    "DAY 4": {
+        "Vocabulary": [
+            {"t": "morning briefing", "p": "ˈmɔːrnɪŋ ˈbriːfɪŋ", "tr": "reunião matinal / briefing", "ex": "We have a morning briefing today."},
+            {"t": "client", "p": "ˈklaɪənt", "tr": "cliente", "ex": "She is with the client."},
+            {"t": "project", "p": "ˈprɑːdʒekt", "tr": "projeto", "ex": "He is ready for the project."},
+            {"t": "in training", "p": "ɪn ˈtreɪnɪŋ", "tr": "em treinamento", "ex": "They are in training."},
+            {"t": "fair", "p": "fer", "tr": "feira de negócios", "ex": "New Partners at the Fair."},
+            {"t": "partner", "p": "ˈpɑːrtnər", "tr": "sócio / parceiro de negócios", "ex": "He is a partner from the USA."},
+            {"t": "representative", "p": "ˌreprɪˈzentətɪv", "tr": "representante", "ex": "They are representatives."},
+            {"t": "headquarters", "p": "ˈhedkwɔːrtərz", "tr": "matriz / sede da empresa", "ex": "They are from the headquarters."},
+            {"t": "assistant", "p": "əˈsɪstənt", "tr": "assistente", "ex": "These are the assistants."},
+            {"t": "Welcome to...", "p": "ˈwelkəm tuː", "tr": "Bem-vindo/a a...", "ex": "Welcome to the farm!"}
+        ]
+    },
+    "DAY 5": {
+        "Vocabulary": [
+            {"t": "This is [name]. He/She is a [cargo].", "p": "", "tr": "Ao apresentar um colega individualmente", "ex": "This is Ana. She is a manager."},
+            {"t": "These are [name] and [name]. They are [cargo].", "p": "", "tr": "Ao apresentar dois colegas juntos", "ex": "These are Ana and Pedro. They are engineers."},
+            {"t": "He/She is from [city/team].", "p": "", "tr": "Ao dar a origem ou equipe da pessoa", "ex": "He is from the operations team."},
+            {"t": "He/She is busy, but he/she is ready.", "p": "", "tr": "Ao mostrar disponibilidade apesar de ocupado", "ex": "She is busy, but she is ready."},
+            {"t": "Is he/she available for the meeting?", "p": "", "tr": "Ao perguntar sobre disponibilidade", "ex": "Is he available for the meeting?"},
+            {"t": "No, he/she isn't. He/She is at the farm.", "p": "", "tr": "Ao informar que alguém não está disponível", "ex": "No, she isn't. She is at the farm."},
+            {"t": "They are ready for the project.", "p": "", "tr": "Ao confirmar que a equipe está pronta", "ex": "They are ready for the project."},
+            {"t": "He/She is our specialist.", "p": "", "tr": "Ao destacar a expertise de um colega", "ex": "He is our specialist."},
+            {"t": "They are from the [sales/technical/operations] team.", "p": "", "tr": "Ao indicar o departamento", "ex": "They are from the sales team."},
+            {"t": "He/She is the right person for your project.", "p": "", "tr": "Ao recomendar um colega a um parceiro", "ex": "She is the right person for your project."}
+        ]
+    }
+},
 
 "Método T.A.L.K - Week 3": {
      
@@ -237,7 +309,7 @@ data = {
     }
 },
     
-"Método T.A.L.K - Week 3": {
+"Método T.A.L.K - Week 4": {
     "DAY 1": {
         "Vocabulary": [
             {"t": "eat", "p": "iːt", "tr": "comer", "ex": "I eat lunch at the canteen."},
@@ -364,7 +436,7 @@ data = {
     }
 },
 
-    "W5 · Logistics & Executive Flow": {
+    "Método T.A.L.K - Week 5": {
     "DAY 1": {
         "Vocabulary": [
             {"t": "warehouse", "p": "ˈwerhaʊs", "tr": "armazém / galpão", "ex": "The grain is stored in the warehouse."},
